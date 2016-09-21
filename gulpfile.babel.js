@@ -21,7 +21,7 @@ bundler.transform(babelify.configure({
   sourceMapRelative: 'src'
 }));
 
-gulp.task('default', ['styles']);
+gulp.task('default', ['watch']);
 
 gulp.task('styles', function () {
   gulp.src(['./wp-content/themes/astrid_childtheme/*.scss'])
