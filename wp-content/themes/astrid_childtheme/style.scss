@@ -9,3 +9,47 @@ Template: astrid
 
 
 /********************Your styles goes here**********************/
+
+
+
+
+/* page generel*/
+.site-content{
+    margin: 0px;
+    
+    .container{
+        margin: 0px;
+        width: 100%;
+    }
+
+
+}
+
+
+@media (min-width: 992px){
+    .container {
+        width: 100%;
+    }
+
+
+
+}
+
+/*menu*/
+
+#masthead{
+    .site-branding{
+        width: auto;
+        float: left;
+    }
+
+    .btn-menu{
+        width: auto;
+        float: right;
+    }
+
+}
+
+.custom-logo{
+    width: 130px;
+}
