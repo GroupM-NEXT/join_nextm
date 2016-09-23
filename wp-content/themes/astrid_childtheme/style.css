@@ -8,17 +8,15 @@ Template: astrid
 /********************Your styles goes here**********************/
 html {
   position: relative;
-  min-height: 100%; }
+  min-height: 100%;
+  background-color: white; }
 
 body {
-  margin: 0 0 80px;
-  /* bottom = footer height */ }
+  margin: 0 0 80px; }
 
-/* generel rules*/
 .center-element {
   text-align: center; }
 
-/* page generel*/
 .site-content {
   margin: 0px; }
   .site-content .container {
@@ -26,12 +24,17 @@ body {
     width: 100%; }
   .site-content .entry-header {
     display: none; }
+  .site-content .hentry {
+    margin: 0;
+    padding: 60px;
+    background-color: #fff;
+    border: 0px solid #F2F2F3;
+    margin-bottom: -1px; }
 
 @media (min-width: 992px) {
   .container {
     width: 100%; } }
 
-/*menu*/
 #masthead .site-branding {
   width: auto;
   float: left; }
@@ -43,7 +46,9 @@ body {
 .custom-logo {
   width: 130px; }
 
-/* footer */
+.company-logo-container {
+  padding-bottom: 25px; }
+
 .site-footer {
   position: absolute;
   left: 0;

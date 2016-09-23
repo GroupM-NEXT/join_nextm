@@ -12,23 +12,25 @@ Template: astrid
 html {
     position: relative;
     min-height: 100%;
+    background-color: white;
 }
 
 body {
+    //skal matche footers højde
     margin: 0 0 80px;
-    /* bottom = footer height */
+
 
 }
 
 
-/* generel rules*/
+// generel rules
 
 .center-element{
     text-align: center;
 }
 
 
-/* page generel*/
+//page generel
 .site-content{
     margin: 0px;
     
@@ -40,7 +42,15 @@ body {
     .entry-header{
         display: none;
     }
-
+    
+    // gør at de ikke kommer en grå streg når der ikke er nok indhold på siden
+    .hentry {
+        margin: 0;
+        padding: 60px;
+        background-color: #fff;
+        border: 0px solid #F2F2F3;
+        margin-bottom: -1px;
+    }
 
 }
 
@@ -54,7 +64,7 @@ body {
 
 }
 
-/*menu*/
+// menu
 
 #masthead{
     .site-branding{
@@ -74,7 +84,14 @@ body {
 }
 
 
-/* footer */
+// company page
+
+.company-logo-container{
+    padding-bottom: 25px;
+}
+
+
+// footer
 
 .site-footer{
     position: absolute;
