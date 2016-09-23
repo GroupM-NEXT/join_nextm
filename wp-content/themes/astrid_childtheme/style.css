@@ -6,6 +6,18 @@ Template: astrid
 */
 @import url("../astrid/style.css");
 /********************Your styles goes here**********************/
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  margin: 0 0 80px;
+  /* bottom = footer height */ }
+
+/* generel rules*/
+.center-element {
+  text-align: center; }
+
 /* page generel*/
 .site-content {
   margin: 0px; }
@@ -30,3 +42,12 @@ Template: astrid
 
 .custom-logo {
   width: 130px; }
+
+/* footer */
+.site-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 80px;
+  width: 100%;
+  overflow: hidden; }
