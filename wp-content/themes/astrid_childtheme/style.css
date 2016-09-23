@@ -12,6 +12,8 @@ Template: astrid
   .site-content .container {
     margin: 0px;
     width: 100%; }
+  .site-content .entry-header {
+    display: none; }
 
 @media (min-width: 992px) {
   .container {
