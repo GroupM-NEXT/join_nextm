@@ -93,21 +93,40 @@ body {
 .info-formular-container{
     padding-bottom: 25px;
     padding-top: 25px;
+
+    a{
+        &:hover{
+            text-decoration: none;
+        }
+        &:focus{
+            text-decoration: none;
+            color: #ffb32c;
+        }
+    }
 }
 
 .formular-container{
     padding: 10px;
     transition: all 0.5s ease;
+    color: #656D6D;
 
     .formular-title{
         position: relative;
         left: 0px;
-        transition: all 0.5s ease;
-  
+        transition: all 0.5s ease;    
+    }
+
+    a{
+        color: #656D6D;
+
+        &:focus{
+            color: #656D6D;
+        }
     }
 
     &:hover {
         cursor: pointer;
+        
         .formular-show-text{
             opacity: 100;
         }
@@ -118,6 +137,7 @@ body {
             color: #ffb32c;
            
         }
+
     }
 }
 
