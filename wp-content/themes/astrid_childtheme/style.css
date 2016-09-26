@@ -54,7 +54,25 @@ body {
   padding-top: 25px; }
 
 .formular-container {
-  background-color: #202529; }
+  padding: 10px;
+  transition: all 0.5s ease; }
+  .formular-container .formular-title {
+    position: relative;
+    left: 0px;
+    transition: all 0.5s ease; }
+  .formular-container:hover {
+    cursor: pointer; }
+    .formular-container:hover .formular-show-text {
+      opacity: 100; }
+    .formular-container:hover .formular-title {
+      left: 15px;
+      transition: all 0.5s ease;
+      color: #ffb32c; }
+
+.formular-show-text {
+  float: right;
+  transition: all 0.5s ease;
+  opacity: 0; }
 
 .site-footer {
   position: absolute;

@@ -96,7 +96,36 @@ body {
 }
 
 .formular-container{
-    background-color: #202529;
+    padding: 10px;
+    transition: all 0.5s ease;
+
+    .formular-title{
+        position: relative;
+        left: 0px;
+        transition: all 0.5s ease;
+  
+    }
+
+    &:hover {
+        cursor: pointer;
+        .formular-show-text{
+            opacity: 100;
+        }
+
+        .formular-title{
+            left: 15px;
+            transition: all 0.5s ease;
+            color: #ffb32c;
+           
+        }
+    }
+}
+
+
+.formular-show-text{
+    float: right;
+    transition: all 0.5s ease;
+    opacity: 0;
 }
 
 
