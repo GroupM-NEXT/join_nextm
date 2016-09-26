@@ -15,12 +15,6 @@ html {
     background-color: white;
 }
 
-body {
-    //skal matche footers højde
-    margin: 0 0 80px;
-
-
-}
 
 
 // generel rules
@@ -28,6 +22,44 @@ body {
 .center-element{
     text-align: center;
 }
+
+
+//media queries
+
+@media (max-width: 767px){
+    .site-footer{
+        height: 312px;
+    }
+
+    body {
+        //skal matche footers højde
+        margin: 0 0 312px;
+    }
+}
+
+
+@media (min-width: 768px){
+    .site-footer{
+        height: 234px;
+    }
+
+    body {
+        //skal matche footers højde
+        margin: 0 0 234px;
+    }
+}
+
+@media (min-width: 992px){
+    .container {
+        width: 100%;
+    }
+
+
+
+}
+
+
+
 
 
 //page generel
@@ -55,14 +87,7 @@ body {
 }
 
 
-@media (min-width: 992px){
-    .container {
-        width: 100%;
-    }
 
-
-
-}
 
 // menu
 
@@ -152,11 +177,66 @@ body {
 
 // footer
 
+.footer-wrapper{
+    .container{
+        padding: 0px;
+    }
+}
+
 .site-footer{
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 80px;
     width: 100%;
     overflow: hidden;
+    background-color: #272d32!important;
+}
+
+.footer-top-container{
+    color: #656D6D;
+    padding: 10px 10px;
+    background-color: #272d32;
+
+    h1{
+        color:#656D6D;
+        margin-top: 0px;
+        margin-bottom: 34px;
+    }
+
+    .contact-icon{
+        margin-right: 10px;
+
+    }
+
+    .mail-to-link{
+        color: #656D6D;
+    }
+
+    .footer-contact-mail{
+        transition: all 0.5s ease;
+        margin: 0px;
+        
+        &:hover{
+            color: #ffb32c;
+        }
+        
+    }
+    
+}
+
+.footer-bottom-container{
+    color: #656D6D;
+    margin: 0px;
+    text-align: center;
+    padding: 5px;
+    margin: 0 10px;
+
+    p{
+        margin: 0px;
+    }
+}
+
+.footer-logo{
+    width: 200px;
+    margin-bottom: 15px;
 }

@@ -11,11 +11,24 @@ html {
   min-height: 100%;
   background-color: white; }
 
-body {
-  margin: 0 0 80px; }
-
 .center-element {
   text-align: center; }
+
+@media (max-width: 767px) {
+  .site-footer {
+    height: 312px; }
+  body {
+    margin: 0 0 312px; } }
+
+@media (min-width: 768px) {
+  .site-footer {
+    height: 234px; }
+  body {
+    margin: 0 0 234px; } }
+
+@media (min-width: 992px) {
+  .container {
+    width: 100%; } }
 
 .site-content {
   margin: 0px; }
@@ -30,10 +43,6 @@ body {
     background-color: #fff;
     border: 0px solid #F2F2F3;
     margin-bottom: -1px; }
-
-@media (min-width: 992px) {
-  .container {
-    width: 100%; } }
 
 #masthead .site-branding {
   width: auto;
@@ -85,10 +94,44 @@ body {
   opacity: 0;
   color: #ffb32c; }
 
+.footer-wrapper .container {
+  padding: 0px; }
+
 .site-footer {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 80px;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #272d32 !important; }
+
+.footer-top-container {
+  color: #656D6D;
+  padding: 10px 10px;
+  background-color: #272d32; }
+  .footer-top-container h1 {
+    color: #656D6D;
+    margin-top: 0px;
+    margin-bottom: 34px; }
+  .footer-top-container .contact-icon {
+    margin-right: 10px; }
+  .footer-top-container .mail-to-link {
+    color: #656D6D; }
+  .footer-top-container .footer-contact-mail {
+    transition: all 0.5s ease;
+    margin: 0px; }
+    .footer-top-container .footer-contact-mail:hover {
+      color: #ffb32c; }
+
+.footer-bottom-container {
+  color: #656D6D;
+  margin: 0px;
+  text-align: center;
+  padding: 5px;
+  margin: 0 10px; }
+  .footer-bottom-container p {
+    margin: 0px; }
+
+.footer-logo {
+  width: 200px;
+  margin-bottom: 15px; }
