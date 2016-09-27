@@ -175,6 +175,9 @@ html {
 .custom-logo {
   width: 130px; }
 
+#mainnav a:focus {
+  outline: 0px auto -webkit-focus-ring-color !important; }
+
 .company-logo-container {
   padding-bottom: 25px; }
 

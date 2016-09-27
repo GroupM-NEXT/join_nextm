@@ -302,6 +302,12 @@ $nextm-standard: 'Open Sans', sans-serif;
 }
 
 
+#mainnav{
+    a:focus{
+        outline: 0px auto -webkit-focus-ring-color!important;
+    }
+}
+
 // company page
 
 .company-logo-container{
