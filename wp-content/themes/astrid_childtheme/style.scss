@@ -282,6 +282,12 @@ $nextm-standard: 'Open Sans', sans-serif;
     }
 }
 
+// if no entries hide the container
+.gv-container-no-results{
+    display: none;
+}
+
+
 // menu
 
 #masthead{

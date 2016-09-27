@@ -164,6 +164,9 @@ html {
   outline: -webkit-focus-ring-color auto 0px !important;
   border: 1px solid #ffb32c; }
 
+.gv-container-no-results {
+  display: none; }
+
 #masthead .site-branding {
   width: auto;
   float: left; }
