@@ -309,6 +309,6 @@ class GWSubmissionLimit extends GW_Submission_Limit { }
 new GW_Submission_Limit( array(
     'form_id' => 4,
     'limit' => 1,
-    'limit_message' => 'Aha! You have been limited.',
+    'limit_message' => 'You can only complete the formular once. If you wish to edit your formular please go to "My Forms" from the menu',
     'limit_by' => array( 'embed_url', 'user_id' )
 ) );
