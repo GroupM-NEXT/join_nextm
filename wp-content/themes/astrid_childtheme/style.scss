@@ -24,6 +24,10 @@ html {
 }
 
 
+//fonts
+
+$nextm-standard: 'Open Sans', sans-serif;
+
 //media queries
 
 @media (max-width: 767px){
@@ -116,18 +120,134 @@ html {
     display: inline-block;
     margin: 0px!important;
     padding: 10px!important;
+    transition: all 0.5s ease;
+
+    a{
+        transition: all 0.5s ease;
+        color: #656D6D;
+        font-size: 18px;
+        font-family: $nextm-standard;
+
+        &:hover{
+            text-decoration: none!important;
+            color: #ffb32c;
+        }
+    }
 }
 
 .view-standard-edit{
     width: 20%;
     display: inline-block;
     text-align: right;
+    padding-right: 15px!important;
+
+    a{
+        transition: all 0.5s ease;
+        color: #656D6D;
+        font-size: 14px;
+        font-family: $nextm-standard;
+
+        &:hover{
+            text-decoration: none!important;
+            color: #ffb32c;
+        }
+    }
+
 }
 
 .gv-list-view-content{
     padding: 0px!important;
 }
 
+//single entry view
+.gv-list-view-title{
+    padding: 0px!important;
+}
+
+.gv-list-view{
+    border: 1px solid #ddd!important;
+}
+
+//for standard elementer
+.view-standard-single-entry-element{
+    font-size: 18px;
+    font-family: $nextm-standard;
+    padding: 15px!important;
+    margin: 0px!important;
+    border-bottom: 1px solid #ddd;
+
+    span{
+        display: inline-block;
+        color: #656D6D!important;
+    }
+
+    p{
+        display: inline-block;
+        color: #ffb32c;
+
+    }
+}
+
+//for address elementer
+.view-standard-single-entry-address-element{
+    font-size: 18px;
+    font-family: $nextm-standard;
+    padding: 15px!important;
+    margin: 0px!important;
+    border-bottom: 1px solid #ddd;
+
+    span{
+        color: #656D6D!important;
+    }
+
+    p{
+        color: #ffb32c;
+
+    }
+    .map-it-link{
+        display: none;
+    }
+}
+
+
+//for file upload elementer
+.view-standard-single-entry-file-element{
+    font-size: 18px;
+    font-family: $nextm-standard;
+    padding: 15px!important;
+    margin: 0px!important;
+    border-bottom: 1px solid #ddd;
+
+    span{
+        color: #656D6D!important;
+
+    }
+
+    p{
+        color: #ffb32c;
+        
+
+    }
+}
+
+//for html elementer
+.view-standard-subline-container{
+    .form-subline{
+        font-size: 18px;
+        font-family: $nextm-standard;
+        padding: 15px!important;
+        background-color: #272d32;
+        color: #656D6D;
+    }
+
+    .form-paragraph{
+        font-size: 18px;
+        font-family: $nextm-standard;
+        padding: 15px!important;
+        color: #656D6D;
+
+    }
+}
 
 // menu
 
