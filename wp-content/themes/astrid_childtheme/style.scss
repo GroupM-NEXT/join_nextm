@@ -237,7 +237,7 @@ $nextm-standard: 'Open Sans', sans-serif;
         font-family: $nextm-standard;
         padding: 15px!important;
         background-color: #272d32;
-        color: #656D6D;
+        color: #bdbdbd;
     }
 
     .form-paragraph{
@@ -246,6 +246,39 @@ $nextm-standard: 'Open Sans', sans-serif;
         padding: 15px!important;
         color: #656D6D;
 
+    }
+}
+
+//edit entry view
+
+.gv-edit-entry-title{
+    font-size: 24px;
+    font-family: $nextm-standard;
+}
+
+.gform_fields{
+    input{
+        width: 100%!important;
+
+        &:focus{
+            outline: -webkit-focus-ring-color auto 0px!important;
+            border: 1px solid #ffb32c;
+        }
+        
+        
+    }
+
+    .name_first{
+            width: 100%!important;
+        }
+
+    .name_last{
+        width: 100%!important;
+    }
+
+    textarea:focus{
+        outline: -webkit-focus-ring-color auto 0px!important;
+        border: 1px solid #ffb32c;
     }
 }
 
