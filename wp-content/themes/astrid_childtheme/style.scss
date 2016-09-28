@@ -15,6 +15,10 @@ html {
     background-color: white;
 }
 
+body{
+    font-family: Open Sans, sans-serif!important;
+}
+
 
 
 // generel rules
@@ -110,6 +114,18 @@ $nextm-standard: 'Open Sans', sans-serif;
 
     .gform_confirmation_message{
         text-align: center;
+    }
+
+    //prev botton
+    .gform_previous_button{
+        border: 1px solid #272d32 !important;
+        color: #272d32;
+        font-family: $nextm-standard;
+
+        &:hover{
+            background-color: #272d32;
+            color: #656D6D;
+        }
     }
     //styles for submitknap
     #gform_submit_button_1{
@@ -401,6 +417,10 @@ $nextm-standard: 'Open Sans', sans-serif;
 .limit-message{
     text-align: center;
 }
+
+
+
+
 
 
 //404-page
