@@ -322,4 +322,11 @@ new GW_Submission_Limit( array(
     'limit_by' => array( 'embed_url', 'user_id' )
 ) );
 
+# Basic Usage - limit user to only submit breakout denmark form once
+new GW_Submission_Limit( array(
+    'form_id' => 6,
+    'limit' => 1,
+    'limit_message' => 'You can only complete the formular once. If you wish to edit your formular please go to "My Forms" from the menu',
+    'limit_by' => array( 'embed_url', 'user_id' )
+) );
 
