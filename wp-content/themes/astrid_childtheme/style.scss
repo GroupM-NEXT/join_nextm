@@ -95,6 +95,16 @@ $nextm-standard: 'Open Sans', sans-serif;
 //Formulars
 
 .form-look-standard{
+    .gform_title{
+        font-family: $nextm-standard;
+        font-size: 28px!important;
+        color: #272d32;
+        font-weight: 400!important;
+    }
+    .form-subline{
+        color: #ffb32c;
+        font-size: 20px;
+    }
     span{
         width: 100%!important;
         input{
@@ -131,6 +141,11 @@ $nextm-standard: 'Open Sans', sans-serif;
     .gform_save_link{
         float: right;
     }
+
+    .gf_progressbar{
+        padding: 0px!important;
+    }
+
     //styles for submitknap
     #gform_submit_button_1{
     
