@@ -224,6 +224,9 @@ html {
   opacity: 0;
   color: #ffb32c; }
 
+.limit-message {
+  text-align: center; }
+
 .error-404 {
   text-align: center; }
 
