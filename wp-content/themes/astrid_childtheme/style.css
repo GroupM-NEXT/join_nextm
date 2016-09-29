@@ -206,6 +206,12 @@ body {
   outline: -webkit-focus-ring-color auto 0px !important;
   border: 1px solid #ffb32c; }
 
+#publishing-action {
+  text-align: center; }
+  #publishing-action .btn:focus {
+    box-shadow: none !important;
+    outline: 0px auto -webkit-focus-ring-color !important; }
+
 .gv-container-no-results {
   display: none; }
 

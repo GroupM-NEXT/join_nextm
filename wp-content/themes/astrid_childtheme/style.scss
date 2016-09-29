@@ -341,6 +341,16 @@ $nextm-standard: 'Open Sans', sans-serif;
     }
 }
 
+//centrer knapper ved edit entry
+#publishing-action{
+    text-align: center;
+
+    .btn:focus{
+        box-shadow: none!important;
+        outline: 0px auto -webkit-focus-ring-color!important;
+    }
+}
+
 // if no entries hide the container
 .gv-container-no-results{
     display: none;
