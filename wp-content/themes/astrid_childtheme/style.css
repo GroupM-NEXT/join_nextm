@@ -115,6 +115,11 @@ body {
       text-decoration: none !important;
       color: #ffb32c; }
 
+.view-standard-edit-single-view {
+  float: right;
+  width: 100%;
+  background: white; }
+
 .gv-list-view-content {
   padding: 0px !important; }
 
