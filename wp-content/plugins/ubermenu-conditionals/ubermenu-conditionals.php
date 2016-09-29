@@ -191,8 +191,11 @@ function ubermenu_conditionals_test_condition( $condition , $param , &$umitem , 
 			case 'user_not_role':
 				return !uberMenu_conditionals_check_user_role( $param );
 				break;
-
-
+				
+			case 'user_name_can':
+				return uberMenu_conditionals_check_user_name( $param );
+				break;
+				
 			/* Custom */
 			default: 
 				$display_on = apply_filters( 'ubermenu_conditionals_custom_condition' , $display_on , $condition , $param );
@@ -307,6 +310,10 @@ function ubermenu_conditionals_options(){
 			'user_not_role'			=> array(
 											'name'	=> __( 'User is not [role]' , 'ubermenu' ),
 											'desc'  => __( 'Required Parameter: ' , 'ubermenu' ) . '<a target="_blank" href="http://codex.wordpress.org/Roles_and_Capabilities">Role Slug</a>',
+										),
+			'user_name_can'			=> array(
+											'name'	=> __( 'Username [username]' , 'ubermenu' ),
+											'desc'  => __( 'Required Parameter: ' , 'ubermenu' ) . 'username',
 										),
 		),
 		'pages'	=> array(
@@ -453,6 +460,16 @@ function uberMenu_conditionals_check_user_role( $role, $user_id = null ) {
     return in_array( strtolower( $role ), (array) $user->roles );
 }
 
+/* Since 1.2 */
+function uberMenu_conditionals_check_user_name($username, $user_id = null ) {
+
+	if( is_numeric( $user_id ) )	$user = get_userdata( $user_id );
+	else							$user = wp_get_current_user();
+ 
+	if( empty( $user ) )			return false;
+
+    return in_array( strtolower( $username ), (array) $user->user_login );
+}
 
 /* Dynamic URLs - since 1.1 */
 
