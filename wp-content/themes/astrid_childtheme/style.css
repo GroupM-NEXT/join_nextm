@@ -17,6 +17,9 @@ body {
 .center-element {
   text-align: center; }
 
+.color-orange {
+  color: #ffb32c !important; }
+
 @media (max-width: 767px) {
   .site-footer {
     height: 312px; }
