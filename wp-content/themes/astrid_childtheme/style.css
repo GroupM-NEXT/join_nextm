@@ -229,6 +229,9 @@ body {
 .custom-logo {
   width: 130px; }
 
+.login-logout-link {
+  color: #ffb32c !important; }
+
 #mainnav a:focus {
   outline: 0px auto -webkit-focus-ring-color !important; }
 
