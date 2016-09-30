@@ -385,6 +385,12 @@ $nextm-standard: 'Open Sans', sans-serif;
 
 }
 
+.menu-item-elements:focus{
+    outline: 0px auto -webkit-focus-ring-color!important;
+    
+
+}
+
 
 #mainnav{
     a:focus{

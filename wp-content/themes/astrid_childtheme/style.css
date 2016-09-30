@@ -232,6 +232,9 @@ body {
 .login-logout-link {
   color: #ffb32c !important; }
 
+.menu-item-elements:focus {
+  outline: 0px auto -webkit-focus-ring-color !important; }
+
 #mainnav a:focus {
   outline: 0px auto -webkit-focus-ring-color !important; }
 
