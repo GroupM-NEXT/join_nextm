@@ -172,6 +172,15 @@ $nextm-standard: 'Open Sans', sans-serif;
     #gform_submit_button_1{
     
     }
+
+    //style for feltet invoice address
+    .invoice-address-field{
+        .copy_values_option_container{
+            input{
+                width: 5%!important;
+            }
+        }
+    }
 }
 
 

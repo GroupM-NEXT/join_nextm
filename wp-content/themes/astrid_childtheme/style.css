@@ -105,6 +105,9 @@ body {
 .form-look-standard .gf_progressbar {
   padding: 0px !important; }
 
+.form-look-standard .invoice-address-field .copy_values_option_container input {
+  width: 5% !important; }
+
 .view-standard-link {
   width: 80%;
   display: inline-block;
