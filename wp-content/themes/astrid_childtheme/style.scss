@@ -31,10 +31,28 @@ body{
     color: #ffb32c!important;
 }
 
+.border-top-dashed{
+    border-top: 1px solid;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    margin-top: 10px;
+    border-style: dashed;
+}
 
 //fonts
 
 $nextm-standard: 'Open Sans', sans-serif;
+
+.header-font{
+    font-family: $nextm-standard;
+    font-size: 30px;
+}
+
+.sub-header-font{
+    font-family: $nextm-standard;
+    font-size: 20px;
+}
 
 //media queries
 

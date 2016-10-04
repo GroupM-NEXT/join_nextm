@@ -20,6 +20,22 @@ body {
 .color-orange {
   color: #ffb32c !important; }
 
+.border-top-dashed {
+  border-top: 1px solid;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  margin-top: 10px;
+  border-style: dashed; }
+
+.header-font {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px; }
+
+.sub-header-font {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px; }
+
 @media (max-width: 767px) {
   .site-footer {
     height: 312px; }
