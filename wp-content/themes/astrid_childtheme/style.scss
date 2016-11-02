@@ -15,9 +15,6 @@ html {
     background-color: white;
 }
 
-body{
-    font-family: Open Sans, sans-serif!important;
-}
 
 
 
@@ -40,18 +37,73 @@ body{
     border-style: dashed;
 }
 
-//fonts
+/////////////////////////////// colors //////////////////////////////
+$dark-blue: #0A2756;
+$ligt-blue: #637EAD;
+$yellow: #FFB32C;
 
-$nextm-standard: 'Open Sans', sans-serif;
+
+/////////////////////////////// fonts ///////////////////////////////
+
+$nextm-standard: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 .header-font{
     font-family: $nextm-standard;
     font-size: 30px;
+    color: $dark-blue;
 }
 
 .sub-header-font{
     font-family: $nextm-standard;
     font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.nextm-paragraph{
+    font-family: $nextm-standard;
+    font-size: 14px;
+}
+
+.nextm-paragraph-bottom-margin{
+    margin-bottom: 50px;
+}
+
+.bristol{
+    font-family: Bristol;
+    text-transform: uppercase;
+    font-size: 35px;
+    color: $ligt-blue;
+}
+
+.dark-blue{
+    color: $dark-blue;
+}
+
+
+////////////////////////// Buttons ////////////////////////////////
+.button-yellow{
+    &:hover{
+        button{
+            opacity: 0.7;
+
+        }
+    }
+
+    
+    button{
+        
+        background: $yellow;
+        border: 1px solid $yellow;
+        border-radius: 5px;
+        color: white;
+        font-family: $nextm-standard;
+        text-transform: uppercase;
+        
+        &:focus{
+            outline: -webkit-focus-ring-color auto 0px!important;
+        }
+    }
 }
 
 //media queries
@@ -84,6 +136,9 @@ $nextm-standard: 'Open Sans', sans-serif;
         width: 100%;
     }
 
+    .flying-m-logo{
+        max-width: 80%;
+    }
 
 
 }
@@ -121,16 +176,22 @@ $nextm-standard: 'Open Sans', sans-serif;
 
 .frontpage-wrapper{
     //gør at footer bliver i bunden og resten af siden fyldes ud så der ikke er nogle blank space
-    position: absolute;
+/*    position: absolute;
     width: 100%;
     height: 100%;
-    top: 0px;
-
-    background-image: url('/wp-content/uploads/2016/11/concrete_wall.jpg');
+    top: 0px;*/
+    
+    padding-bottom: 70px;
+    background-image: url('/wp-content/uploads/2016/11/concrete_wall_light_desktop.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-position: center;
+
+    .flying-logo-container{
+        margin-top: 50px;
+    }
 }
 
 
