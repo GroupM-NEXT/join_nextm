@@ -111,11 +111,21 @@ $nextm-standard: 'Open Sans', sans-serif;
         margin-bottom: -1px;
     }
 
+    .row{
+        margin: 0px;
+    }
+
 }
 
 /////////////////////////// frontpage ////////////////////////
 
 .frontpage-wrapper{
+    //gør at footer bliver i bunden og resten af siden fyldes ud så der ikke er nogle blank space
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+
     background-image: url('/wp-content/uploads/2016/11/concrete_wall.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
