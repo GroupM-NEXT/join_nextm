@@ -140,6 +140,10 @@ $nextm-standard: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
         max-width: 80%;
     }
 
+    .site-footer{
+        background-image: url('/wp-content/uploads/2016/11/concrete_footer_desktop_v3.jpg')!important;
+    }
+
 
 }
 
@@ -168,6 +172,11 @@ $nextm-standard: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
     .row{
         margin: 0px;
+    }
+
+    //skjuler "edit" nederst på page hvis man er logget ind som admin
+    .entry-footer{
+        display: none;
     }
 
 }
@@ -593,7 +602,7 @@ $nextm-standard: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
 }
 
-// footer
+////////////////////////////// footer //////////////////////////////
 
 .entry-footer{
     margin-top: 0px;
@@ -611,18 +620,29 @@ $nextm-standard: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
     bottom: 0;
     width: 100%;
     overflow: hidden;
-    background-color: #272d32!important;
+/*    background-color: #272d32!important;*/
+    background-image: url('/wp-content/uploads/2016/11/concrete_footer_v7.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: top center;
 }
 
 .footer-top-container{
     color: #656D6D;
-    padding: 10px 10px;
-    background-color: #272d32;
+    padding: 20px 10px;
+
 
     h1{
         color:#656D6D;
         margin-top: 0px;
         margin-bottom: 34px;
+    }
+
+    .top-footer-text{
+        font-family: $nextm-standard;
+        font-weight: 400;
     }
 
     .contact-icon{
@@ -650,11 +670,13 @@ $nextm-standard: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #656D6D;
     margin: 0px;
     text-align: center;
-    padding: 5px;
-    margin: 0 10px;
+
+
 
     p{
         margin: 0px;
+        font-family: $nextm-standard;
+        font-weight: 400;
     }
 }
 

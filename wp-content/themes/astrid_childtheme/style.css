@@ -81,7 +81,9 @@ html {
   .container {
     width: 100%; }
   .flying-m-logo {
-    max-width: 80%; } }
+    max-width: 80%; }
+  .site-footer {
+    background-image: url("/wp-content/uploads/2016/11/concrete_footer_desktop_v3.jpg") !important; } }
 
 .site-content {
   margin: 0px; }
@@ -98,6 +100,8 @@ html {
     margin-bottom: -1px; }
   .site-content .row {
     margin: 0px; }
+  .site-content .entry-footer {
+    display: none; }
 
 .frontpage-wrapper {
   /*    position: absolute;
@@ -362,16 +366,21 @@ html {
   bottom: 0;
   width: 100%;
   overflow: hidden;
-  background-color: #272d32 !important; }
+  /*    background-color: #272d32!important;*/
+  background-image: url("/wp-content/uploads/2016/11/concrete_footer_v7.jpg");
+  background-size: cover;
+  background-position: top center; }
 
 .footer-top-container {
   color: #656D6D;
-  padding: 10px 10px;
-  background-color: #272d32; }
+  padding: 20px 10px; }
   .footer-top-container h1 {
     color: #656D6D;
     margin-top: 0px;
     margin-bottom: 34px; }
+  .footer-top-container .top-footer-text {
+    font-family: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400; }
   .footer-top-container .contact-icon {
     margin-right: 10px; }
   .footer-top-container .mail-to-link {
@@ -385,11 +394,11 @@ html {
 .footer-bottom-container {
   color: #656D6D;
   margin: 0px;
-  text-align: center;
-  padding: 5px;
-  margin: 0 10px; }
+  text-align: center; }
   .footer-bottom-container p {
-    margin: 0px; }
+    margin: 0px;
+    font-family: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400; }
 
 .footer-logo {
   width: 200px;
