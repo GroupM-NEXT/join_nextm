@@ -115,6 +115,11 @@ html {
   .frontpage-wrapper .flying-logo-container {
     margin-top: 50px; }
 
+.know-wrapper {
+  background: #ececec; }
+  .know-wrapper .bird-talking-gif {
+    max-width: 60%; }
+
 .form-look-standard .gform_title {
   font-family: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 28px !important;
