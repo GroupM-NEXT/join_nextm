@@ -150,6 +150,12 @@ html {
     text-align: center;
     width: 1.6em; }
 
+.form-look-standard .gform_heading {
+  margin-top: 40px; }
+
+.form-look-standard .gform_page_fields {
+  margin-bottom: 80px; }
+
 .form-look-standard .gform_title {
   font-family: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 28px !important;
@@ -157,7 +163,7 @@ html {
   font-weight: 400 !important; }
 
 .form-look-standard .form-subline {
-  color: #ffb32c;
+  color: #637EAD;
   font-size: 20px; }
 
 .form-look-standard span {
@@ -175,16 +181,30 @@ html {
 .form-look-standard .gform_confirmation_message {
   text-align: center; }
 
+.form-look-standard .gform_page_footer {
+  width: calc(100% - 18px) !important; }
+
 .form-look-standard .gform_previous_button {
-  border: 1px solid #272d32 !important;
-  color: #272d32;
-  font-family: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  border: 1px solid #bdbdbd !important;
+  color: #bdbdbd;
+  font-family: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 15px !important;
+  margin-top: 15px !important; }
   .form-look-standard .gform_previous_button:hover {
-    background-color: #272d32;
-    color: #656D6D; }
+    background-color: #bdbdbd;
+    color: white; }
+
+.form-look-standard .gform_next_button {
+  border: 1px solid #637EAD !important;
+  color: #637EAD;
+  font-family: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .form-look-standard .gform_next_button:hover {
+    background-color: #637EAD;
+    color: white; }
 
 .form-look-standard .gform_save_link {
-  float: right; }
+  float: right;
+  color: #637EAD; }
 
 .form-look-standard .gf_progressbar {
   padding: 0px !important; }

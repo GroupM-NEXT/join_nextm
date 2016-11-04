@@ -254,6 +254,15 @@ $nextm-standard: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
 /////////////////////////// Formulars ////////////////////////
 
 .form-look-standard{
+
+    .gform_heading{
+        margin-top: 40px;
+    }
+
+    .gform_page_fields{
+        margin-bottom: 80px;
+    }
+
     .gform_title{
         font-family: $nextm-standard;
         font-size: 28px!important;
@@ -261,7 +270,7 @@ $nextm-standard: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: 400!important;
     }
     .form-subline{
-        color: #ffb32c;
+        color: $ligt-blue;
         font-size: 20px;
     }
     span{
@@ -285,20 +294,39 @@ $nextm-standard: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
         text-align: center;
     }
 
-    //prev botton
+    .gform_page_footer{
+        width: calc(100% - 18px)!important;
+    }
+
+    //prev button
     .gform_previous_button{
-        border: 1px solid #272d32 !important;
-        color: #272d32;
+        border: 1px solid #bdbdbd !important;
+        color: #bdbdbd;
+        font-family: $nextm-standard;
+        margin-bottom: 15px!important;
+        margin-top: 15px!important;
+
+        &:hover{
+            background-color: #bdbdbd;
+            color: white;
+        }
+    }
+
+    //next button
+    .gform_next_button{
+        border: 1px solid #637EAD !important;
+        color: $ligt-blue;
         font-family: $nextm-standard;
 
         &:hover{
-            background-color: #272d32;
-            color: #656D6D;
+            background-color: #637EAD;
+            color: white;
         }
     }
 
     .gform_save_link{
         float: right;
+        color: $ligt-blue;
     }
 
     .gf_progressbar{
