@@ -11,6 +11,9 @@ html {
   min-height: 100%;
   background-color: white; }
 
+a::hover {
+  cursor: pointer !important; }
+
 .center-element {
   text-align: center; }
 
@@ -26,7 +29,7 @@ html {
   border-style: dashed; }
 
 .no-margin-bottom {
-  margin-bottom: 0px; }
+  margin-bottom: 0px !important; }
 
 @font-face {
   font-family: Bristol;
@@ -150,6 +153,57 @@ html {
     text-align: center;
     width: 1.6em; }
 
+.my-forms-wrapper {
+  margin-top: 30px; }
+
+.profile-info-container {
+  margin-top: 30px; }
+
+.company-page-container {
+  margin-top: 30px; }
+  .company-page-container hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 2px solid #637EAD;
+    margin: 0px 0px 20px 0px;
+    padding: 0; }
+  .company-page-container .company-logo-container {
+    padding-bottom: 25px; }
+  .company-page-container .info-formular-container {
+    padding-bottom: 25px;
+    padding-top: 25px; }
+    .company-page-container .info-formular-container a:hover {
+      text-decoration: none; }
+    .company-page-container .info-formular-container a:focus {
+      text-decoration: none;
+      color: #ffb32c; }
+  .company-page-container .formular-container {
+    padding: 10px;
+    transition: all 0.5s ease;
+    color: #656D6D; }
+    .company-page-container .formular-container .formular-title {
+      position: relative;
+      left: 0px;
+      transition: all 0.5s ease; }
+    .company-page-container .formular-container a {
+      color: #656D6D; }
+      .company-page-container .formular-container a:focus {
+        color: #656D6D; }
+    .company-page-container .formular-container:hover {
+      cursor: pointer; }
+      .company-page-container .formular-container:hover .formular-show-text {
+        opacity: 100; }
+      .company-page-container .formular-container:hover .formular-title {
+        left: 15px;
+        transition: all 0.5s ease;
+        color: #ffb32c; }
+  .company-page-container .formular-show-text {
+    float: right;
+    transition: all 0.5s ease;
+    opacity: 0;
+    color: #ffb32c; }
+
 .form-look-standard .gform_heading {
   margin-top: 40px; }
 
@@ -241,6 +295,9 @@ html {
       text-decoration: none !important;
       color: #ffb32c; }
 
+.view-standard-edit a {
+  color: #FFB32C; }
+
 .view-standard-edit-single-view {
   float: right;
   width: 100%;
@@ -266,7 +323,7 @@ html {
     color: #656D6D !important; }
   .view-standard-single-entry-element p {
     display: inline-block;
-    color: #ffb32c; }
+    color: #637EAD; }
 
 .view-standard-single-entry-address-element {
   font-size: 18px;
@@ -277,7 +334,7 @@ html {
   .view-standard-single-entry-address-element span {
     color: #656D6D !important; }
   .view-standard-single-entry-address-element p {
-    color: #ffb32c; }
+    color: #637EAD; }
   .view-standard-single-entry-address-element .map-it-link {
     display: none; }
 
@@ -290,7 +347,7 @@ html {
   .view-standard-single-entry-file-element span {
     color: #656D6D !important; }
   .view-standard-single-entry-file-element p {
-    color: #ffb32c; }
+    color: #637EAD; }
   .view-standard-single-entry-file-element a:focus {
     text-decoration: none !important;
     color: #ffb32c;
@@ -300,8 +357,8 @@ html {
   font-size: 18px;
   font-family: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 15px !important;
-  background-color: #272d32;
-  color: #bdbdbd; }
+  background-color: #637EAD;
+  color: white; }
 
 .view-standard-subline-container .form-paragraph {
   font-size: 18px;
@@ -369,47 +426,9 @@ html {
 #mainnav a:focus {
   outline: 0px auto -webkit-focus-ring-color !important; }
 
-.company-logo-container {
-  padding-bottom: 25px; }
-
-.info-formular-container {
-  padding-bottom: 25px;
-  padding-top: 25px; }
-  .info-formular-container a:hover {
-    text-decoration: none; }
-  .info-formular-container a:focus {
-    text-decoration: none;
-    color: #ffb32c; }
-
-.formular-container {
-  padding: 10px;
-  transition: all 0.5s ease;
-  color: #656D6D; }
-  .formular-container .formular-title {
-    position: relative;
-    left: 0px;
-    transition: all 0.5s ease; }
-  .formular-container a {
-    color: #656D6D; }
-    .formular-container a:focus {
-      color: #656D6D; }
-  .formular-container:hover {
-    cursor: pointer; }
-    .formular-container:hover .formular-show-text {
-      opacity: 100; }
-    .formular-container:hover .formular-title {
-      left: 15px;
-      transition: all 0.5s ease;
-      color: #ffb32c; }
-
-.formular-show-text {
-  float: right;
-  transition: all 0.5s ease;
-  opacity: 0;
-  color: #ffb32c; }
-
 .limit-message {
-  text-align: center; }
+  text-align: center;
+  margin-top: 30px; }
 
 .error-404 {
   text-align: center; }
