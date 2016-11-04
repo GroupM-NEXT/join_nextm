@@ -128,7 +128,8 @@ html {
 .know-wrapper {
   background: #ececec; }
   .know-wrapper .bird-talking-gif {
-    max-width: 60%; }
+    max-width: 60%;
+    padding-top: 15px; }
   .know-wrapper hr {
     display: block;
     height: 2px;
@@ -327,6 +328,14 @@ html {
 #masthead .btn-menu {
   width: auto;
   float: right; }
+
+.main-navigation li a::before {
+  right: 0;
+  border-top: 0px solid #fcd088; }
+
+.main-navigation li a::after {
+  left: 0;
+  border-bottom: 0px solid #fcd088; }
 
 .custom-logo {
   width: 130px; }

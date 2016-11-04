@@ -223,6 +223,7 @@ $nextm-standard: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
     .bird-talking-gif{
         max-width: 60%;
+        padding-top: 15px;
     }
 
     hr {
@@ -524,7 +525,7 @@ $nextm-standard: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 
-// menu
+//////////////////////////// menu ///////////////////////////
 
 #masthead{
     .site-branding{
@@ -537,6 +538,18 @@ $nextm-standard: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
         float: right;
     }
 
+}
+
+//hide default themes style on hover on menu item
+.main-navigation li a::before {
+    right: 0;
+    border-top: 0px solid #fcd088;
+}
+
+//hide default themes style on hover on menu item
+.main-navigation li a::after {
+    left: 0;
+    border-bottom: 0px solid #fcd088;
 }
 
 .custom-logo{
