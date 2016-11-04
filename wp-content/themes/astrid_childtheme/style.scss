@@ -18,7 +18,7 @@ html {
 
 
 
-// generel rules
+////////////////////////// generel rules ///////////////////////////
 
 .center-element{
     text-align: center;
@@ -37,6 +37,9 @@ html {
     border-style: dashed;
 }
 
+.no-margin-bottom{
+    margin-bottom: 0px;
+}
 
 
 /////////////////////////////// colors //////////////////////////////
@@ -46,13 +49,18 @@ $yellow: #FFB32C;
 
 
 /////////////////////////////// fonts ///////////////////////////////
+@font-face {
+    font-family: Bristol;
+    src: url(../astrid_childtheme/fonts/Bristol.otf);
+}
+
 
 $nextm-standard: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 .header-font{
     font-family: $nextm-standard;
     font-size: 30px;
-    color: $dark-blue;
+    font-weight: 400;
 }
 
 .sub-header-font{
@@ -82,6 +90,9 @@ $nextm-standard: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: $dark-blue;
 }
 
+.light-blue{
+    color: $ligt-blue;
+}
 
 ////////////////////////// Buttons ////////////////////////////////
 .button-yellow{
@@ -212,6 +223,29 @@ $nextm-standard: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
     .bird-talking-gif{
         max-width: 60%;
+    }
+
+    hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 2px solid #637EAD;
+    margin: 0em 0;
+    padding: 0; 
+    }
+
+    .number-circle{
+        background: #637EAD;
+        border-radius: 0.8em;
+        -moz-border-radius: 0.8em;
+        -webkit-border-radius: 0.8em;
+        color: #fff;
+        display: inline-block;
+        line-height: 1.6em;
+        font-size: 16px;
+        margin-right: 10px;
+        text-align: center;
+        width: 1.6em; 
     }
 }
 

@@ -25,10 +25,17 @@ html {
   margin-top: 10px;
   border-style: dashed; }
 
+.no-margin-bottom {
+  margin-bottom: 0px; }
+
+@font-face {
+  font-family: Bristol;
+  src: url(../astrid_childtheme/fonts/Bristol.otf); }
+
 .header-font {
   font-family: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 30px;
-  color: #0A2756; }
+  font-weight: 400; }
 
 .sub-header-font {
   font-family: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -51,6 +58,9 @@ html {
 
 .dark-blue {
   color: #0A2756; }
+
+.light-blue {
+  color: #637EAD; }
 
 .button-yellow:hover button {
   opacity: 0.7; }
@@ -119,6 +129,25 @@ html {
   background: #ececec; }
   .know-wrapper .bird-talking-gif {
     max-width: 60%; }
+  .know-wrapper hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 2px solid #637EAD;
+    margin: 0em 0;
+    padding: 0; }
+  .know-wrapper .number-circle {
+    background: #637EAD;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #fff;
+    display: inline-block;
+    line-height: 1.6em;
+    font-size: 16px;
+    margin-right: 10px;
+    text-align: center;
+    width: 1.6em; }
 
 .form-look-standard .gform_title {
   font-family: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
