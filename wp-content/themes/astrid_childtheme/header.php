@@ -17,7 +17,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
+<link rel="preload" as="image" href="/wp-content/uploads/2016/11/flying_m_no_shadow.gif">
 
 <?php wp_head(); ?>
 </head>
