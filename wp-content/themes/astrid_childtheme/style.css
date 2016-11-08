@@ -453,7 +453,8 @@ a::hover {
   /*    background-color: #272d32!important;*/
   background-image: url("/wp-content/uploads/2016/11/concrete_footer_v7.jpg");
   background-size: cover;
-  background-position: top center; }
+  background-position: top center;
+  padding-top: 15px; }
 
 .footer-top-container {
   color: #656D6D;

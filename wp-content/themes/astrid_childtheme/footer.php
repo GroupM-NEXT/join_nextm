@@ -41,8 +41,8 @@
 					</div>
 				</div>
 
-				<div class="row footer-bottom-container">
-					<div class="col-xs-12 footer-column-content">
+				<div class="row">
+					<div class="col-xs-12 footer-column-content footer-bottom-container">
 						<p>©2015 GroupM All rights reserved. WPP – Leaders in Advertising, Marketing & Media</p>
 
 					</div>

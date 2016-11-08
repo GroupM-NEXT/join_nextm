@@ -758,6 +758,7 @@ $nextm-standard: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
     -o-background-size: cover;
     background-size: cover;
     background-position: top center;
+    padding-top: 15px;
 }
 
 .footer-top-container{
@@ -801,13 +802,15 @@ $nextm-standard: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #656D6D;
     margin: 0px;
     text-align: center;
-
+    
+    
 
 
     p{
         margin: 0px;
         font-family: $nextm-standard;
         font-weight: 400;
+
     }
 }
 
