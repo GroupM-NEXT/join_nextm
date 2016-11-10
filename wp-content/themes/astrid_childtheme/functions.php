@@ -305,11 +305,12 @@ class GWSubmissionLimit extends GW_Submission_Limit { }
 
 # Configuration
 
+#Denmark
 # Basic Usage - limit user to only submit sponsor denmark form once
 new GW_Submission_Limit( array(
     'form_id' => 4,
     'limit' => 1,
-    'limit_message' => 'You can only complete the formular once. If you wish to edit your formular please go to "My Forms" from the menu',
+    'limit_message' => 'You can only complete the form once. If you wish to edit your form please go to "My Forms" from the menu',
     'limit_by' => array( 'embed_url', 'user_id' ),
     'time_period' => false  // forever!
 ) );
@@ -319,7 +320,7 @@ new GW_Submission_Limit( array(
 new GW_Submission_Limit( array(
     'form_id' => 5,
     'limit' => 1,
-    'limit_message' => 'You can only complete the formular once. If you wish to edit your formular please go to "My Forms" from the menu',
+    'limit_message' => 'You can only complete the form once. If you wish to edit your form please go to "My Forms" from the menu',
     'limit_by' => array( 'embed_url', 'user_id' ),
     'time_period' => false  // forever!
 ) );
@@ -328,12 +329,58 @@ new GW_Submission_Limit( array(
 new GW_Submission_Limit( array(
     'form_id' => 6,
     'limit' => 1,
-    'limit_message' => 'You can only complete the formular once. If you wish to edit your formular please go to "My Forms" from the menu',
+    'limit_message' => 'You can only complete the form once. If you wish to edit your form please go to "My Forms" from the menu',
+    'limit_by' => array( 'embed_url', 'user_id' ),
+    'time_period' => false  // forever!
+) );
+
+#Sweden
+# Basic Usage - limit user to only submit sponsor sweden form once
+new GW_Submission_Limit( array(
+    'form_id' => 9,
+    'limit' => 1,
+    'limit_message' => 'You can only complete the form once. If you wish to edit your form please go to "My Forms" from the menu',
+    'limit_by' => array( 'embed_url', 'user_id' ),
+    'time_period' => false  // forever!
+) );
+
+# Basic Usage - limit user to only submit keynote sweden form once
+new GW_Submission_Limit( array(
+    'form_id' => 10,
+    'limit' => 1,
+    'limit_message' => 'You can only complete the form once. If you wish to edit your form please go to "My Forms" from the menu',
+    'limit_by' => array( 'embed_url', 'user_id' ),
+    'time_period' => false  // forever!
+) );
+
+# Basic Usage - limit user to only submit breakout sweden form once
+new GW_Submission_Limit( array(
+    'form_id' => 11,
+    'limit' => 1,
+    'limit_message' => 'You can only complete the form once. If you wish to edit your form please go to "My Forms" from the menu',
+    'limit_by' => array( 'embed_url', 'user_id' ),
+    'time_period' => false  // forever!
+) );
+
+#Finland
+# Basic Usage - limit user to only submit sponsor finland form once
+new GW_Submission_Limit( array(
+    'form_id' => 12,
+    'limit' => 1,
+    'limit_message' => 'You can only complete the form once. If you wish to edit your form please go to "My Forms" from the menu',
     'limit_by' => array( 'embed_url', 'user_id' ),
     'time_period' => false  // forever!
 ) );
 
 
+# Basic Usage - limit user to only submit keynote speaker finland form once
+new GW_Submission_Limit( array(
+    'form_id' => 13,
+    'limit' => 1,
+    'limit_message' => 'You can only complete the form once. If you wish to edit your form please go to "My Forms" from the menu',
+    'limit_by' => array( 'embed_url', 'user_id' ),
+    'time_period' => false  // forever!
+) );
 
 
 
