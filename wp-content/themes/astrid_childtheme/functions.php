@@ -382,6 +382,14 @@ new GW_Submission_Limit( array(
     'time_period' => false  // forever!
 ) );
 
+# Basic Usage - limit user to only submit keynote speaker finland form once
+new GW_Submission_Limit( array(
+    'form_id' => 14,
+    'limit' => 1,
+    'limit_message' => 'You can only complete the form once. If you wish to edit your form please go to "My Forms" from the menu',
+    'limit_by' => array( 'embed_url', 'user_id' ),
+    'time_period' => false  // forever!
+) );
 
 
 add_action( 'admin_init', 'redirect_non_admin_users' );
