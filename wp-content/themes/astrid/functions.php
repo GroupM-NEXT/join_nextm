@@ -265,18 +265,22 @@ function astrid_has_header() {
 	$front_header = get_theme_mod('front_header_type' ,'image');
 	$site_header = get_theme_mod('site_header_type', 'nothing');
 	global $post;
-	if ( !is_404() && !is_search() ) {
-		$single_toggle = get_post_meta( $post->ID, '_astrid_header_key', true );
+	if ( !is_404() || !is_search() ) {
+		$single_toggle = get_post_meta( $post->ID, '_astrid_single_header_shortcode', true );
 	} else {
 		$single_toggle = false;
 	}
 
-	if ( get_header_image() && ( $front_header == 'image' && is_front_page() ) || ( $site_header == 'image' && !is_front_page() ) ) {
-		if (!$single_toggle)
-		return 'has-header';
-	} elseif ( ($front_header == 'shortcode' && is_front_page()) || ($site_header == 'shortcode' && !is_front_page()) ) {
-		if (!$single_toggle)
-		return 'has-shortcode';
+	if ($single_toggle != '') {
+		return 'has-single';
+	} else {
+		if ( get_header_image() && ( $front_header == 'image' && is_front_page() ) || ( $site_header == 'image' && !is_front_page() ) ) {
+			return 'has-header';
+		} elseif ( ($front_header == 'shortcode' && is_front_page()) || ($site_header == 'shortcode' && !is_front_page()) ) {
+			return 'has-shortcode';
+		} elseif ( ($front_header == 'video' && is_front_page()) || ($site_header == 'video' && !is_front_page()) ) {
+			return 'has-video';
+		}		
 	}
 }
 
@@ -348,7 +352,11 @@ function astrid_branding() {
 	} elseif ( $site_logo ) {
 		echo '<a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr(get_bloginfo('name')) . '"><img class="site-logo" src="' . esc_url($site_logo) . '" alt="' . esc_attr(get_bloginfo('name')) . '" /></a>'; 
 	} else {
-		echo '<h1 class="site-title"><a href="' . esc_url( home_url( '/' ) ) . '" rel="home">' . esc_html(get_bloginfo('name')) . '</a></h1>';
+		if ( is_front_page() && is_home() ) {
+			echo '<h1 class="site-title"><a href="' . esc_url( home_url( '/' ) ) . '" rel="home">' . esc_html(get_bloginfo('name')) . '</a></h1>';
+		} else {
+			echo '<p class="site-title"><a href="' . esc_url( home_url( '/' ) ) . '" rel="home">' . esc_html(get_bloginfo('name')) . '</a></p>';
+		}
 		echo '<p class="site-description">' . esc_html(get_bloginfo( 'description' )) . '</p>';
 	}
 }
@@ -433,6 +441,26 @@ function astrid_footer_credits() {
 }
 add_action( 'astrid_footer', 'astrid_footer_credits' );
 
+function astrid_remove_page_template() {
+
+	if ( !function_exists('astrid_pro_load_widgets') ) {
+
+	    global $pagenow;
+	    if ( in_array( $pagenow, array( 'post-new.php', 'post.php') ) && get_post_type() == 'page' ) { ?>
+	        <script type="text/javascript">
+	            (function($){
+	                $(document).ready(function(){
+	                    $('#page_template option[value="single-event.php"]').remove();
+	                    $('#page_template option[value="single-pricing.php"]').remove();                    
+	                })
+	            })(jQuery)
+	        </script>
+	    <?php 
+	    }
+	}
+}
+add_action('admin_footer', 'astrid_remove_page_template', 10);
+
 /**
  * Implement the Custom Header feature.
  */
@@ -467,6 +495,11 @@ require get_template_directory() . '/inc/framework/widget-options.php';
  * Styles
  */
 require get_template_directory() . '/inc/styles.php';
+
+/**
+ * Demo content
+ */
+require get_template_directory() . '/inc/demo-content/setup.php';
 
 /**
  * Woocommerce
