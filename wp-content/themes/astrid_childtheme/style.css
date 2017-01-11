@@ -129,7 +129,8 @@ a::hover {
     margin-top: 50px; }
 
 .know-wrapper {
-  background: #ececec; }
+  background: #ececec;
+  padding-bottom: 50px; }
   .know-wrapper .bird-talking-gif {
     max-width: 60%;
     padding-top: 15px; }
