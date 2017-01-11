@@ -255,6 +255,23 @@ $nextm-standard: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
         text-align: center;
         width: 1.6em; 
     }
+
+    .download-link{
+        color: $ligt-blue;
+        text-decoration: underline;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        
+
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+
+    .first-link{
+        margin-top: 30px;
+        margin-bottom: 10px!important;
+    }
 }
 
 /////////////////////////// my forms /////////////////////////

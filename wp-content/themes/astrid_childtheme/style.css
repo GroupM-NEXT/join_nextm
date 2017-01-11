@@ -153,6 +153,16 @@ a::hover {
     margin-right: 10px;
     text-align: center;
     width: 1.6em; }
+  .know-wrapper .download-link {
+    color: #637EAD;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all 0.5s ease; }
+    .know-wrapper .download-link:hover {
+      opacity: 0.7; }
+  .know-wrapper .first-link {
+    margin-top: 30px;
+    margin-bottom: 10px !important; }
 
 .my-forms-wrapper {
   margin-top: 30px; }
