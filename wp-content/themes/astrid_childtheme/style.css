@@ -278,6 +278,16 @@ a::hover {
 .form-look-standard .invoice-address-field .copy_values_option_container input {
   width: 5% !important; }
 
+.form-look-standard .gfield_radio label {
+  font-weight: 400 !important; }
+
+.form-look-standard .gfield_radio input {
+  margin-left: 1px;
+  margin-bottom: 2px !important; }
+
+.form-look-standard .gfield_checkbox label {
+  font-weight: 400 !important; }
+
 .view-standard-link {
   width: 80%;
   display: inline-block;

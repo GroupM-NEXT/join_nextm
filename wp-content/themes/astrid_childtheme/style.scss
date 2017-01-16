@@ -464,6 +464,22 @@ $nextm-standard: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
             }
         }
     }
+
+    .gfield_radio{
+        label{
+            font-weight: 400!important;
+        }
+        input{
+            margin-left: 1px;
+            margin-bottom: 2px!important;
+        }
+    }
+
+    .gfield_checkbox{
+        label{
+            font-weight: 400!important;
+        }
+    }
 }
 
 

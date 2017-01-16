@@ -391,6 +391,60 @@ new GW_Submission_Limit( array(
     'time_period' => false  // forever!
 ) );
 
+# Basic Usage - limit user to only submit regular booth finland form once
+new GW_Submission_Limit( array(
+    'form_id' => 25,
+    'limit' => 1,
+    'limit_message' => 'You can only complete the form once. If you wish to edit your form please go to "My Forms" from the menu',
+    'limit_by' => array( 'embed_url', 'user_id' ),
+    'time_period' => false  // forever!
+) );
+
+# Basic Usage - limit user to only submit regular booth sweden form once
+new GW_Submission_Limit( array(
+    'form_id' => 26,
+    'limit' => 1,
+    'limit_message' => 'You can only complete the form once. If you wish to edit your form please go to "My Forms" from the menu',
+    'limit_by' => array( 'embed_url', 'user_id' ),
+    'time_period' => false  // forever!
+) );
+
+
+# Basic Usage - limit user to only submit regular booth Denmark form once
+new GW_Submission_Limit( array(
+    'form_id' => 27,
+    'limit' => 1,
+    'limit_message' => 'You can only complete the form once. If you wish to edit your form please go to "My Forms" from the menu',
+    'limit_by' => array( 'embed_url', 'user_id' ),
+    'time_period' => false  // forever!
+) );
+
+# Basic Usage - limit user to only submit double booth finland form once
+new GW_Submission_Limit( array(
+    'form_id' => 28,
+    'limit' => 1,
+    'limit_message' => 'You can only complete the form once. If you wish to edit your form please go to "My Forms" from the menu',
+    'limit_by' => array( 'embed_url', 'user_id' ),
+    'time_period' => false  // forever!
+) );
+
+# Basic Usage - limit user to only submit double booth sweden form once
+new GW_Submission_Limit( array(
+    'form_id' => 29,
+    'limit' => 1,
+    'limit_message' => 'You can only complete the form once. If you wish to edit your form please go to "My Forms" from the menu',
+    'limit_by' => array( 'embed_url', 'user_id' ),
+    'time_period' => false  // forever!
+) );
+
+# Basic Usage - limit user to only submit double booth denmark form once
+new GW_Submission_Limit( array(
+    'form_id' => 30,
+    'limit' => 1,
+    'limit_message' => 'You can only complete the form once. If you wish to edit your form please go to "My Forms" from the menu',
+    'limit_by' => array( 'embed_url', 'user_id' ),
+    'time_period' => false  // forever!
+) );
 
 add_action( 'admin_init', 'redirect_non_admin_users' );
 /**
