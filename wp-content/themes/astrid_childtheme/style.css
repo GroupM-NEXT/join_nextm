@@ -347,6 +347,28 @@ a::hover {
     display: inline-block;
     color: #637EAD; }
 
+.gv-list-view h3 {
+  font-size: 18px;
+  font-family: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 15px !important;
+  margin: 0px !important;
+  border-bottom: 1px solid #ddd; }
+
+.gv-list-view div {
+  font-size: 18px;
+  font-family: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 15px !important;
+  margin: 0px !important;
+  border-bottom: 1px solid #ddd; }
+
+.gv-list-view span {
+  display: inline-block;
+  color: #656D6D !important; }
+
+.gv-list-view p {
+  display: inline-block;
+  color: #637EAD; }
+
 .view-standard-single-entry-address-element {
   font-size: 18px;
   font-family: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;

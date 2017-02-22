@@ -567,10 +567,39 @@ $nextm-standard: font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
         color: $ligt-blue;
 
     }
+}
 
+.gv-list-view{
+h3{
+font-size: 18px;
+    font-family: $nextm-standard;
+    padding: 15px!important;
+    margin: 0px!important;
+    border-bottom: 1px solid #ddd;
+}
+
+div{
+    font-size: 18px;
+    font-family: $nextm-standard;
+    padding: 15px!important;
+    margin: 0px!important;
+    border-bottom: 1px solid #ddd;
+}
+    
     
 
+    span{
+        display: inline-block;
+        color: #656D6D!important;
+    }
+
+    p{
+        display: inline-block;
+        color: $ligt-blue;
+
+    }
 }
+
 
 //for address elementer
 .view-standard-single-entry-address-element{
